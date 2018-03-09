@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <!-- <h1 class="display-3">Hogwarts Express Train Schedule</h1> -->
+            </div>
+        </div>
+        <form>
+            <div class="well well-trans">
+                <h4>Add Train</h4>
+                    
+                <div class="form-group-fluid">
+                    <label for="formNameInput"> Train Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Train Name">
+                </div>
+                <div class="form-group">
+                    <label for="formDestination"> Destination</label>
+                    <input type="text" class="form-control" name="destination" id="destination" placeholder="Destination">
+                </div>
+                <div class="form-group">
+                    <label for="formTrainTime"> First Train Time (HH:MM - Military Time)</label>
+                    <input type="text" class="form-control" name="train-time" id="train-time" placeholder="First Train Time">
+                </div>
+                <div class="form-group">
+                    <label for="formFrequency"> Frequency (min)</label>
+                    <input type="number" class="form-control" name="frequency" id="frequency" placeholder="Frequency">
+                </div>
+                <button type = "button" class = "btn btn-danger" id="submitBTN" type="submit">SUBMIT</button>
+                </div>
+        </form>
+        <br>
+        <div class="well well-trans">
+            <table class="table table-hover table-responsive">
+                <thead id="table-head">
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./assets/javascript/train.js"></script>
+
+    <audio autoplay>
+            <source src="Harry_Potter_Theme_Song_Hedwigs_Theme.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+</body>
+
+</html>

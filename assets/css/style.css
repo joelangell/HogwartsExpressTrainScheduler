@@ -1,0 +1,55 @@
+.jumbotron {
+    background-color: black;
+    color: white;
+}
+
+.lead {
+    text-align: center;
+}
+
+.panel-default { 
+    border-color: #7c7474 !important;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: rgb(180, 166, 167);
+  }
+
+#table-head {
+    background-color: rgb(180, 166, 167);
+  }
+
+@font-face {
+    font-family: harryPotter;
+    src: url(./harrypotter.TTF);
+}
+
+h1 {
+    font-family: harryPotter;
+    text-align: center;
+}
+
+.jumbotron {
+    background-image: url(../images/hogwarts.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-image: url(../images/station.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.well.well-trans {
+	background-color: rgba(255,255,255,.8);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+	border: none;
+}
+
+.btn {
+    background-color: rgb(105,25,26);
+}
