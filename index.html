@@ -30,29 +30,30 @@
         </div>
         <form>
             <div class="well well-trans">
-                <h4>Add Train</h4>
+                <h4>Add Train to Schedule</h4>
                     
                 <div class="form-group-fluid">
                     <label for="formNameInput"> Train Name</label>
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Train Name">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Hogwarts Express">
                 </div>
                 <div class="form-group">
                     <label for="formDestination"> Destination</label>
-                    <input type="text" class="form-control" name="destination" id="destination" placeholder="Destination">
+                    <input type="text" class="form-control" name="destination" id="destination" placeholder="Hogwarts School of Witchcraft and Wizardry">
                 </div>
                 <div class="form-group">
-                    <label for="formTrainTime"> First Train Time (HH:MM - Military Time)</label>
-                    <input type="text" class="form-control" name="train-time" id="train-time" placeholder="First Train Time">
+                    <label for="formTrainTime"> First Train Time</label>
+                    <input type="text" class="form-control" name="train-time" id="train-time" placeholder="HH:MM - Military Time">
                 </div>
                 <div class="form-group">
-                    <label for="formFrequency"> Frequency (min)</label>
-                    <input type="number" class="form-control" name="frequency" id="frequency" placeholder="Frequency">
+                    <label for="formFrequency"> Frequency</label>
+                    <input type="number" class="form-control" name="frequency" id="frequency" placeholder="Minutes Between Trains">
                 </div>
                 <button type = "button" class = "btn btn-danger" id="submitBTN" type="submit">SUBMIT</button>
                 </div>
         </form>
         <br>
         <div class="well well-trans">
+            <h4>Train Schedule</h4>
             <table class="table table-hover table-responsive">
                 <thead id="table-head">
                     <tr>
